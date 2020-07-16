@@ -1,0 +1,150 @@
+default:
+  navigation:
+    - title: Piletas
+      subtitle: Modelos de piletas
+      url: /t/modelos-de-piletas
+      items:
+        - :title: Clasicas
+          :url: /t/modelos-de-piletas/clasicas
+        - :title: Con solar húmedo
+          :url: /t/modelos-de-piletas/con-solar-humedo
+        - :title: Formas rectas
+          :url: /t/modelos-de-piletas/formas-rectas
+        - :title: Formas curvas
+          :url: /t/modelos-de-piletas/formas-curvas
+        - :title: Arco romano
+          :url: /t/modelos-de-piletas/arco-romano
+        - :title: Con jacuzzi
+          :url: /t/modelos-de-piletas/con-jacuzzi
+        - :title: Con desborde finlandés
+          :url: /t/modelos-de-piletas/con-desborde-finlandes
+        - :title: Spas
+          :url: /t/modelos-de-piletas/spas
+        - :title: Piletas en pendiente
+          :url: /t/modelos-de-piletas/piletas-en-pendiente
+      promo_banners:
+        - subtitle: New collection
+          title: Summer 2019
+          url: /t/new-collection/summer-2019
+          image: 'meganav/promo_banner_left-first-category.jpg'
+        - subtitle: Special Offers
+          title: Get up to 30% off
+          url: /t/special-offers/30-off
+          image: 'meganav/promo_banner_right-first-category.jpg'
+    - title: Productos y servicios
+      subtitle: ¡De todo para tu pileta!
+      url: /t/productos-y-servicios
+      items:
+        - :title: Bombas para piletas
+          :url: /t/productos-y-servicios/bombas-para-piletas
+        - :title: Equipos de filtración
+          :url: /t/productos-y-servicios/equipos-de-filtracion
+        - :title: Accesorios de instalación
+          :url: /t/productos-y-servicios/accesorios-de-instalacion
+        - :title: Losetas atérmicas
+          :url: /t/productos-y-servicios/losetas-atermicas
+        - :title: Decks
+          :url: /t/productos-y-servicios/decks
+        - :title: Decoración y confort
+          :url: /t/productos-y-servicios/decoracion-y-confort
+        - :title: Revestimientos para piletas
+          :url: /t/productos-y-servicios/revestimientos-para-piletas
+        - :title: Cubiertas para piletas
+          :url: /t/productos-y-servicios/cubiertas-para-piletas
+        - :title: Iluminación
+          :url: /t/productos-y-servicios/iluminacion
+        - :title: Hidromasajes
+          :url: /t/productos-y-servicios/hidromasajes
+        - :title: Automatización de piletas
+          :url: /t/productos-y-servicios/automatización-de-piletas
+        - :title: Guardas perimitrales
+          :url: /t/productos-y-servicios/guardas-perimitrales
+        - :title: Climatización
+          :url: /t/productos-y-servicios/climatizacion
+        - :title: Pinturas de pileta
+          :url: /t/productos-y-servicios/pinturas-de-pileta
+        - :title: Químicos para piletas
+          :url: /t/productos-y-servicios/químicos-para-piletas
+        - :title: Mantenimiento y limpieza
+          :url: /t/productos-y-servicios/mantenimiento-y-limpieza
+        - :title: Tratamiento de agua
+          :url: /t/productos-y-servicios/tratamiento-de-agua
+    - title: Quienes somos
+      url: /quienes-somos
+    - title: Contacto
+      url: /contacto
+    - title: Blog
+      url: /blog
+
+#  navigation:
+#    - title: Piletas
+#      subtitle: Categorías
+#      url: /t/piletas
+#      items:
+#        - :title: Skirts
+#          :url: /t/women/skirts
+#        - :title: Dresses
+#          :url: /t/women/dresses
+#        - :title: Shirts and Blouses
+#          :url: /t/women/shirts-and-blouses
+#        - :title: Sweaters
+#          :url: /t/women/sweaters
+#        - :title: Tops and T-shirts
+#          :url: /t/women/tops-and-t-shirts
+#        - :title: Jackets and Coats
+#          :url: /t/women/jackets-and-coats
+#      promo_banners:
+#        - subtitle: New collection
+#          title: Summer 2019
+#          url: /t/new-collection/summer-2019
+#          image: 'meganav/promo_banner_left-first-category.jpg'
+#        - subtitle: Special Offers
+#          title: Get up to 30% off
+#          url: /t/special-offers/30-off
+#          image: 'meganav/promo_banner_right-first-category.jpg'
+#    - title: Productos y servicios
+#      subtitle: Categorías
+#      url: /t/productos-y-servicios
+#      items:
+#        - :title: Piletas
+#          :url: /t/men/shirts
+#        - :title: Spas
+#          :url: /t/men/t-shirts
+#        - :title: Equipamiento de piletas
+#          :url: /t/men/sweaters
+#        - :title: Accesorios para piletas
+#          :url: /t/men/jackets-and-coats
+#        - :title: Decoración
+#          :url: /t/men/t-shirts
+#        - :title: Locetas atérmicas
+#          :url: /t/men/t-shirts
+#      items2:
+#        - :title: Revestimientos para piletas
+#          :url: /t/men/t-shirts
+#        - :title: Cubiertas
+#          :url: /t/men/t-shirts
+#        - :title: decks
+#          :url: /t/men/t-shirts
+#        - :title: Hidromasajes
+#          :url: /t/men/t-shirts
+#        - :title: Guardas
+#          :url: /t/men/t-shirts
+#      items3:
+#        - :title: Climatización
+#          :url: /t/men/t-shirts
+#        - :title: Iluminación
+#          :url: /t/men/t-shirts
+#        - :title: Pinturas para piletas
+#          :url: /t/men/t-shirts
+#        - :title: Cascadas
+#          :url: /t/men/t-shirts
+#        - :title: Fuentes
+#          :url: /t/men/t-shirts
+#        - :title: Desborde Finlandés
+#          :url: /t/men/t-shirts
+#    - title: Quienes somos
+#      url: /quienes-somos
+#    - title: Contacto
+#      url: /contacto
+#    - title: Blog
+#      url: /blog

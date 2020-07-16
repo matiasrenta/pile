@@ -1,0 +1,4 @@
+Para limpiar el cache en development (y tal vez en production tambien):
+-----------------------------------------------------------------------
+desde la consola de rails: Rails.cache.clear
+

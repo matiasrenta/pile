@@ -1,0 +1,43 @@
+/* para sobreescribir esta parte del archivo de abajo  */
+/* line 6, ../../../.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/spree_frontend-4.1.7/app/assets/stylesheets/spree/frontend/views/spree/shared/main_nav_bar.scss */
+.main-nav-bar-item {
+  text-transform:: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+/* (+) PARA CAMBIAR EL TEXTO DE LA PRESENTACIÓN "recuerdos increíbles" */
+
+/* line 33, ../../../.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/spree_frontend-4.1.7/app/assets/stylesheets/spree/frontend/views/spree/home/index.scss */
+.homepage-hero-image-text {
+  font-size: 1.0rem;
+  font-weight: 500;
+  line-height: 1.27;
+  letter-spacing: 0.55px;
+  color: white;
+  width: 230px;
+}
+
+@media (min-width: 768px) {
+  /* line 33, ../../../.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/spree_frontend-4.1.7/app/assets/stylesheets/spree/frontend/views/spree/home/index.scss */
+  .homepage-hero-image-text {
+    font-size: 1.75rem;
+    width: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 33, ../../../.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/spree_frontend-4.1.7/app/assets/stylesheets/spree/frontend/views/spree/home/index.scss */
+  .homepage-hero-image-text {
+    font-size: 2.00rem;
+  }
+}
+/* (-) PARA CAMBIAR EL TEXTO DE LA PRESENTACIÓN "recuerdos increíbles" */
+
+
+/* PARA CAMBIAR EL MENÚ DE CATEGORIAS, EL QUE SE DESPLIEGA DEL MAIN MENU */
+.category-links {
+  width: 300px;
+  min-width: 300px;
+}
