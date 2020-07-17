@@ -1,3 +1,50 @@
+# production
+#deploy_to = '/home/deployer/railsapps/dog'
+#keep_releases = 2
+#server_command = "/home/deployer/.rbenv/bin/rbenv exec bundle exec pumactl -F /home/deployer/railsapps/dog/shared/puma.rb phased-restart"
+#app_current = '/home/deployer/railsapps/dog/current'
+#branch = :master
+
+#staging
+deploy_to = '/home/deployer/railsapps/pile_staging'
+keep_releases = 2
+server_command = "/home/deployer/.rbenv/bin/rbenv exec bundle exec pumactl -F /home/deployer/railsapps/pile_staging/shared/puma.rb phased-restart"
+app_current = '/home/deployer/railsapps/pile_staging/current'
+branch = :dev
+
+# Default branch is :master
+set :branch, branch
+
+# Default deploy_to directory is /var/www/my_app
+set :deploy_to, deploy_to
+
+# Default value for keep_releases is 5
+set :keep_releases, keep_releases
+
+namespace :deploy do
+  desc 'Restart application by restarting puma service'
+  task :restart do
+    on roles(:app) do
+      execute "cd '#{app_current}'; #{server_command}"
+    end
+  end
+
+  after :publishing, :restart
+
+  #after :restart, :clear_cache do
+  #  on roles(:web), in: :groups, limit: 3, wait: 10 do
+  #    # Here we can do anything such as:
+  #    #within release_path do
+  #    #  execute :rake, 'cache:clear'
+  #    #end
+  #  end
+  #end
+
+  after :finishing, 'deploy:cleanup'
+end
+
+
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
