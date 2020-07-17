@@ -33,7 +33,7 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rben
 set :bundle_binstubs, nil
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/database.yml config/secrets.yml .env.production}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{storage log tmp/pids tmp/cache tmp/sockets vendor/bundle public/assets public/system}
