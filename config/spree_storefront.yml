@@ -31,9 +31,9 @@ default:
           title: Get up to 30% off
           url: /t/special-offers/30-off
           image: 'meganav/promo_banner_right-first-category.jpg'
-    - title: Productos y servicios
+    - title: Productos
       subtitle: ¡De todo para tu pileta!
-      url: /t/productos-y-servicios
+      url: /t/productos
       items:
         - :title: Bombas para piletas
           :url: /t/productos-y-servicios/bombas-para-piletas
