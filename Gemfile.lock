@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/capistrano/rbenv.git
+  revision: 1fdb93a6dd4a4ab3fb786c995055cf6949daf7a4
+  specs:
+    capistrano-rbenv (2.2.0)
+      capistrano (~> 3.1)
+      sshkit (~> 1.3)
+
+GIT
   remote: https://github.com/johndavid400/spree_blog.git
   revision: 19a7e3292647ac1303c07f112401e594d8448246
   specs:
@@ -113,6 +121,8 @@ GEM
       activerecord (>= 3.0)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    airbrussh (1.4.0)
+      sshkit (>= 1.6.1, != 1.7.0)
     autoprefixer-rails (9.8.4)
       execjs
     awesome_nested_set (3.2.1)
@@ -131,6 +141,16 @@ GEM
     cancancan (3.1.0)
     canonical-rails (0.2.8)
       rails (>= 4.1, < 6.1)
+    capistrano (3.14.1)
+      airbrussh (>= 1.0.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
+    capistrano-bundler (2.0.1)
+      capistrano (~> 3.1)
+    capistrano-rails (1.6.1)
+      capistrano (~> 3.1)
+      capistrano-bundler (>= 1.1, < 3)
     capybara (3.33.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -235,6 +255,9 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
+    net-scp (3.0.0)
+      net-ssh (>= 2.6.5, < 7.0.0)
+    net-ssh (6.1.0)
     nio4r (2.5.2)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
@@ -445,6 +468,9 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sshkit (1.21.0)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     state_machines (0.5.0)
     state_machines-activemodel (0.7.1)
       activemodel (>= 4.1)
@@ -493,6 +519,10 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  capistrano (~> 3.14)
+  capistrano-bundler (~> 2.0)
+  capistrano-rails (~> 1.6)
+  capistrano-rbenv!
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (~> 3.2)
