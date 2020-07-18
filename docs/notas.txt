@@ -3,8 +3,18 @@ Para limpiar el cache en development (y tal vez en production tambien):
 desde la consola de rails: Rails.cache.clear
 
 
+PARA INSTALAR NODEJS y YARD EN UBUNTU (DIGITAL OCEAN). sino asset:precompile daba error
+===================================================
+# NODEJS. ver: https://github.com/nodesource/distributions/blob/master/README.md
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+YARD. ver: https://classic.yarnpkg.com/en/docs/install#debian-stable
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+
+tambien ver como se instala rails 6: https://guides.rubyonrails.org/getting_started.html
 
 
-RAILS_ENV=production RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.7.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile
 
-RAILS_ENV=production RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.7.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake db:create
