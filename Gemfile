@@ -40,7 +40,7 @@ gem 'spree_analytics_trackers', '~> 1.1'
 gem 'spree_social', github: 'spree-contrib/spree_social'
 
 # Blog (CMS)
-#gem 'spree_blog', github: 'johndavid400/spree_blog'
+gem 'spree_blog', github: 'johndavid400/spree_blog'
 # no funcionan:
 # reertech/blogging_spree
 # https://github.com/johndavid400/spree_blog.git

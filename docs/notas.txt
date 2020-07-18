@@ -2,3 +2,9 @@ Para limpiar el cache en development (y tal vez en production tambien):
 -----------------------------------------------------------------------
 desde la consola de rails: Rails.cache.clear
 
+
+
+
+RAILS_ENV=production RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.7.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile
+
+RAILS_ENV=production RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.7.1 $HOME/.rbenv/bin/rbenv exec bundle exec rake db:create

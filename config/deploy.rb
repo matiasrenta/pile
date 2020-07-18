@@ -2,7 +2,9 @@
 lock "~> 3.14.1"
 
 set :application, "pile"
-set :repo_url, "git@github.com:matiasrenta/pile.git"
+#set :repo_url, "git@github.com:matiasrenta/pile.git"
+set :repo_url, "git://github.com/matiasrenta/pile.git"
+
 
 # Simple Role Syntax
 # ==================
