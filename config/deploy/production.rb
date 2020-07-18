@@ -1,8 +1,8 @@
 # production
-#deploy_to = '/home/deployer/railsapps/dog'
+#deploy_to = '/home/deployer/railsapps/pile'
 #keep_releases = 2
-#server_command = "/home/deployer/.rbenv/bin/rbenv exec bundle exec pumactl -F /home/deployer/railsapps/dog/shared/puma.rb phased-restart"
-#app_current = '/home/deployer/railsapps/dog/current'
+#server_command = "/home/deployer/.rbenv/bin/rbenv exec bundle exec pumactl -F /home/deployer/railsapps/pile/shared/puma.rb phased-restart"
+#app_current = '/home/deployer/railsapps/pile/current'
 #branch = :master
 
 #staging
