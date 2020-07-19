@@ -2,7 +2,7 @@ default:
   navigation:
     - title: Piletas
       subtitle: Modelos de piletas
-      url: /t/modelos-de-piletas
+      url: /t/modelos-de-pileta
       items:
         - :title: Clasicas
           :url: /t/modelos-de-piletas/clasicas
