@@ -18,3 +18,7 @@ tambien ver como se instala rails 6: https://guides.rubyonrails.org/getting_star
 
 
 
+RAILS_ENV=production bundle exec rails db:seed
+
+
+
