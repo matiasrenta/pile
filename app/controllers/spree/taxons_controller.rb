@@ -14,22 +14,6 @@ module Spree
     end
 
     def product_carousel
-
-
-      #params[:id] = 'categories/bestsellers' if params[:id] == 'bestsellers'
-      #params[:id] = 'categories/trending' if params[:id] == 'trending'
-
-
-
-      puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-      puts "params.to_s"
-      puts params.to_s
-
-      puts "@taxon.id: #{@taxon.id}"
-      puts "carousel_etag: #{carousel_etag}"
-      puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-
-
       if stale?(etag: carousel_etag, last_modified: last_modified, public: true)
         load_products
         if @products.any?
@@ -47,10 +31,6 @@ module Spree
     end
 
     def load_taxon
-
-      #params[:id] = 'categories/bestsellers' if params[:id] == 'bestsellers'
-      #params[:id] = 'categories/trending' if params[:id] == 'trending'
-
       @taxon = Spree::Taxon.friendly.find(params[:id])
     end
 
