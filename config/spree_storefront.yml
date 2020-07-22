@@ -1,27 +1,23 @@
 default:
   navigation:
     - title: Piletas
-      subtitle: Modelos de piletas
-      url: /t/modelos-de-pileta
+      subtitle: Estilos de pileta
+      url: /t/estilos-de-pileta
       items:
-        - :title: Clasicas
-          :url: /t/modelos-de-piletas/clasicas
-        - :title: Con solar húmedo
-          :url: /t/modelos-de-piletas/con-solar-humedo
         - :title: Formas rectas
-          :url: /t/modelos-de-piletas/formas-rectas
+          :url: /t/estilos-de-pileta/formas-rectas
         - :title: Formas curvas
-          :url: /t/modelos-de-piletas/formas-curvas
+          :url: /t/estilos-de-pileta/formas-curvas
         - :title: Arco romano
-          :url: /t/modelos-de-piletas/arco-romano
-        - :title: Con jacuzzi
-          :url: /t/modelos-de-piletas/con-jacuzzi
-        - :title: Con desborde finlandés
-          :url: /t/modelos-de-piletas/con-desborde-finlandes
-        - :title: Spas
-          :url: /t/modelos-de-piletas/spas
-        - :title: Piletas en pendiente
-          :url: /t/modelos-de-piletas/piletas-en-pendiente
+          :url: /t/estilos-de-pileta/arco-romano
+        - :title: Con solar húmedo
+          :url: /t/estilos-de-pileta/con-solar-humedo
+        - :title: Con jacuzzi o spa
+          :url: /t/estilos-de-pileta/con-jacuzzi
+        - :title: Desborde finlandés
+          :url: /t/estilos-de-pileta/con-desborde-finlandes
+        - :title: Terreno en pendiente
+          :url: /t/estilos-de-pileta/piletas-en-pendiente
       promo_banners:
         - subtitle: New collection
           title: Summer 2019
@@ -36,39 +32,35 @@ default:
       url: /t/productos
       items:
         - :title: Bombas para piletas
-          :url: /t/productos-y-servicios/bombas-para-piletas
+          :url: /t/productos/bombas-para-piletas
         - :title: Equipos de filtración
-          :url: /t/productos-y-servicios/equipos-de-filtracion
+          :url: /t/productos/equipos-de-filtracion
         - :title: Accesorios de instalación
-          :url: /t/productos-y-servicios/accesorios-de-instalacion
-        - :title: Losetas atérmicas
-          :url: /t/productos-y-servicios/losetas-atermicas
-        - :title: Decks
-          :url: /t/productos-y-servicios/decks
+          :url: /t/productos/accesorios-de-instalacion
+        - :title: Locetas atérmicas
+          :url: /t/productos/losetas-atermicas
         - :title: Decoración y confort
-          :url: /t/productos-y-servicios/decoracion-y-confort
+          :url: /t/productos/decoracion-y-confort
         - :title: Revestimientos para piletas
-          :url: /t/productos-y-servicios/revestimientos-para-piletas
+          :url: /t/productos/revestimientos-para-piletas
         - :title: Cubiertas para piletas
-          :url: /t/productos-y-servicios/cubiertas-para-piletas
+          :url: /t/productos/cubiertas-para-piletas
         - :title: Iluminación
-          :url: /t/productos-y-servicios/iluminacion
+          :url: /t/productos/iluminacion
         - :title: Hidromasajes
-          :url: /t/productos-y-servicios/hidromasajes
+          :url: /t/productos/hidromasajes
         - :title: Automatización de piletas
-          :url: /t/productos-y-servicios/automatización-de-piletas
+          :url: /t/productos/automatización-de-piletas
         - :title: Guardas perimitrales
-          :url: /t/productos-y-servicios/guardas-perimitrales
+          :url: /t/productos/guardas-perimitrales
         - :title: Climatización
-          :url: /t/productos-y-servicios/climatizacion
+          :url: /t/productos/climatizacion
         - :title: Pinturas de pileta
-          :url: /t/productos-y-servicios/pinturas-de-pileta
+          :url: /t/productos/pinturas-de-pileta
         - :title: Químicos para piletas
-          :url: /t/productos-y-servicios/químicos-para-piletas
+          :url: /t/productos/químicos-para-piletas
         - :title: Mantenimiento y limpieza
-          :url: /t/productos-y-servicios/mantenimiento-y-limpieza
-        - :title: Tratamiento de agua
-          :url: /t/productos-y-servicios/tratamiento-de-agua
+          :url: /t/productos/mantenimiento-y-limpieza
     - title: Quienes somos
       url: /quienes-somos
     - title: Contacto
