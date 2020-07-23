@@ -33,7 +33,7 @@ gem 'spree', '~> 4.1'
 gem 'spree_auth_devise', '~> 4.1'
 gem 'spree_gateway', '~> 3.7'
 
-# Spree (ecommerce)
+# Spree (extensions)
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 gem 'spree_analytics_trackers', '~> 1.1'
@@ -62,7 +62,6 @@ group :development do
   gem 'capistrano-bundler', '~> 2.0'
   gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rbenv', github: "capistrano/rbenv"
-  #gem 'capistrano-rbenv', '~> 2.2'
 end
 
 group :test do

@@ -13,11 +13,11 @@ default:
         - :title: Con solar húmedo
           :url: /t/estilos-de-pileta/con-solar-humedo
         - :title: Con jacuzzi o spa
-          :url: /t/estilos-de-pileta/con-jacuzzi
+          :url: /t/estilos-de-pileta/con-jacuzzi-o-spa
         - :title: Desborde finlandés
-          :url: /t/estilos-de-pileta/con-desborde-finlandes
+          :url: /t/estilos-de-pileta/desborde-finlandes
         - :title: Terreno en pendiente
-          :url: /t/estilos-de-pileta/piletas-en-pendiente
+          :url: /t/estilos-de-pileta/terreno-en-pendiente
       promo_banners:
         - subtitle: New collection
           title: Summer 2019
@@ -38,7 +38,7 @@ default:
         - :title: Accesorios de instalación
           :url: /t/productos/accesorios-de-instalacion
         - :title: Locetas atérmicas
-          :url: /t/productos/losetas-atermicas
+          :url: /t/productos/locetas-atermicas
         - :title: Decoración y confort
           :url: /t/productos/decoracion-y-confort
         - :title: Revestimientos para piletas
@@ -50,7 +50,7 @@ default:
         - :title: Hidromasajes
           :url: /t/productos/hidromasajes
         - :title: Automatización de piletas
-          :url: /t/productos/automatización-de-piletas
+          :url: /t/productos/automatizacion-de-piletas
         - :title: Guardas perimitrales
           :url: /t/productos/guardas-perimitrales
         - :title: Climatización
@@ -58,7 +58,7 @@ default:
         - :title: Pinturas de pileta
           :url: /t/productos/pinturas-de-pileta
         - :title: Químicos para piletas
-          :url: /t/productos/químicos-para-piletas
+          :url: /t/productos/quimicos-para-piletas
         - :title: Mantenimiento y limpieza
           :url: /t/productos/mantenimiento-y-limpieza
     - title: Quienes somos
