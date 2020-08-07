@@ -19,6 +19,7 @@
     </div>
   </li>
   <% if defined?(spree.account_link_path) %>
+  <%# if false %>
     <li>
       <div class="dropdown navbar-right-dropdown">
         <button id="account-button" type="button" data-toggle="dropdown" class="navbar-right-dropdown-toggle" aria-label="<%= Spree.t('nav_bar.show_user_menu')%>">
@@ -38,8 +39,8 @@
       </div>
     </li>
   <% end %>
-  <li id="link-to-cart">
+  <!--<li id="link-to-cart">
     <%= render 'spree/shared/cart', class: 'd-none d-xl-inline-block cart-icon--xl', size: 36, item_count: 0 %>
     <%= render 'spree/shared/cart', class: 'd-xl-none', size: 24, item_count: 0 %>
-  </li>
+  </li> -->
 </ul>

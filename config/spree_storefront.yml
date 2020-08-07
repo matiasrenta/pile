@@ -65,8 +65,6 @@ default:
       url: /quienes-somos
     - title: Contacto
       url: /contacto
-    - title: Blog
-      url: /blog
 
 #  navigation:
 #    - title: Piletas
