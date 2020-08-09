@@ -38,6 +38,7 @@ gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 gem 'spree_analytics_trackers', '~> 1.1'
 gem 'spree_social', github: 'spree-contrib/spree_social'
+gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
 
 # Blog (CMS)
 #gem 'spree_blog', github: 'johndavid400/spree_blog'
