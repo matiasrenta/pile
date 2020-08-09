@@ -30,3 +30,8 @@ SELECT spree_taxons.* FROM spree_taxons INNER JOIN friendly_id_slugs ON friendly
 
 
 
+SPF RECORD EN DNS PARA EMAILS:
+==============================
+Creo que para que la aplicación web envíe mails y no caigan a spam debo setear el SPF record así:
+v=spf1 ip4:138.197.74.226 include:zoho.com ~all
+Eliminé un TXT record por el warning de ambiguous que me daba. el Value de ese TXT es: zoho-verification=zb69349196.zmverify.zoho.com
