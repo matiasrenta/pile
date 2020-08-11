@@ -9,4 +9,7 @@ es:
       todo_para_piletas: 'Todo para piletas'
       construccion_piletas: 'Construcción de piletas'
       construi_tu_pileta: 'Construir mi pileta'
+    spree_contact_us:
+      notices:
+        success: 'Tu mensaje se envió correctamente, No te preocupes, te vamos a responder rápido.'
 

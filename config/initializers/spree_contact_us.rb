@@ -10,7 +10,7 @@ SpreeContactUs.setup do |config|
 
   # Configure the e-mail address which should receive the contact form email notifications.
   #config.mailer_to = 'contacto@lapile.com.ar'
-  config.mailer_to = 'matiasrenta@gmail.com'
+  config.mailer_to = 'contacto@lapile.com.ar'
 
   # ==> Form Configuration
 
