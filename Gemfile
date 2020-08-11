@@ -41,6 +41,9 @@ gem 'spree_social', github: 'spree-contrib/spree_social'
 gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
 #gem 'spree_contact_us', github: 'matiasrenta/spree_contact_us'
 
+# para setear environment variables. https://github.com/bkeepers/dotenv
+gem 'dotenv-rails'
+
 # Blog (CMS)
 #gem 'spree_blog', github: 'johndavid400/spree_blog'
 # no funcionan:
