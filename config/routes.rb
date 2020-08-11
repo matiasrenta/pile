@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  get 'contacto', to: 'spree/static_content#show', as: 'contacto'
+#  get 'contacto', to: 'spree/static_content#show', as: 'contacto'
   get 'quienes-somos', to: 'spree/static_content#show', as: 'quienes-somos'
 
 

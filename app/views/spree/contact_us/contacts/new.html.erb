@@ -1,0 +1,59 @@
+<%= render partial: 'spree/shared/error_messages', locals: { target: @contact } %>
+
+<div class="contact-us">
+  <div class="container">
+    <nav id="breadcrumbs" class="col-12 mt-1 mt-sm-3 mt-lg-4" aria-label="breadcrumb"><ol class="breadcrumb" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><li itemscope="itemscope" itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="breadcrumb-item"><a itemprop="url" href="/"><span itemprop="name">Inicio</span><meta itemprop="position" content="0"></a><span itemprop="item" itemscope="itemscope" itemtype="https://schema.org/Thing" itemid="/"></span></li><li itemscope="itemscope" itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="breadcrumb-item"><a itemprop="url" href="/contact-us"><span itemprop="name">Contacto</span><meta itemprop="position" content="1"></a><span itemprop="item" itemscope="itemscope" itemtype="https://schema.org/Thing" itemid="/contacto"></span></li></ol></nav>
+    <div class="py-md-3 text-uppercase taxon-title">
+      Contacto
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-6 text-center text-lg-left">
+        <div class="pt-2 pb-lg-1 mb-3 contact-us-subheader">
+          <figure class="logo mx-auto mx-xl-0 pb-xl-1 mb-0 mb-xl-4">
+            <%#= image_tag Spree::Config[:logo], alt: current_store.name, class: 'w-25', title: current_store.name %>
+            <strong>Envianos un whatsapp</strong>
+          </figure>
+        </div>
+        <div><%= Spree.t('spree_contact_us.address_line1') %></div>
+        <div class="mb-4 pb-2 pb-lg-0"><%= Spree.t('spree_contact_us.address_line2') %></div>
+        <div class="mb-4 pb-2 pb-lg-0"><span class="green-text font-weight-bold">Comunicate a nuestras redes</span></div>
+        <div>
+
+          <div class="d-flex d-xl-block justify-content-center mx-auto">
+            <div class="d-flex">
+              <a target="blank" rel="nofollow noopener" href="https://facebook.com/lapile.com.ar"><figure id="facebook" class="px-2"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 19.28 19.175" width="22px" class="spree-icon "><path d="m369.18 160.127a1.051 1.051 0 0 1 -1.048 1.048h-4.925v-7.439h2.515l.367-2.882h-2.882v-1.834c0-.838.21-1.415 1.415-1.415h1.519v-2.62a17.157 17.157 0 0 0 -2.253-.1 3.5 3.5 0 0 0 -3.72 3.825v2.148h-2.515v2.882h2.515v7.439h-9.221a1.051 1.051 0 0 1 -1.048-1.048v-17.083a1.051 1.051 0 0 1 1.049-1.048h17.132a1.051 1.051 0 0 1 1.048 1.048v17.079z" fill="#0074c2" transform="translate(-349.9 -142)"></path></svg>
+              </figure></a>
+              <a target="blank" rel="nofollow noopener" href="https://instagram.com/lapile.com.ar"><figure id="instagram" class="px-2"><svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 19.227 19.175" width="22px" class="spree-icon "><path d="m1009.722 142.1h-14.617a2.281 2.281 0 0 0 -2.305 2.253v14.669a2.281 2.281 0 0 0 2.305 2.253h14.617a2.281 2.281 0 0 0 2.305-2.253v-14.669a2.352 2.352 0 0 0 -2.305-2.253zm-3.143 3.039a.581.581 0 0 1 .576-.576h1.781a.581.581 0 0 1 .576.576v1.781a.581.581 0 0 1 -.576.576h-1.781a.581.581 0 0 1 -.576-.576zm-4.191 2.934a3.668 3.668 0 1 1 0 7.335 3.667 3.667 0 1 1 0-7.335zm7.806 10.845a.581.581 0 0 1 -.576.576h-14.408a.582.582 0 0 1 -.576-.576v-9.011h2.41a3.765 3.765 0 0 0 -.419 1.834 5.868 5.868 0 0 0 11.736 0 2.929 2.929 0 0 0 -.472-1.834h2.41v9.011z" fill="#0074c2" transform="translate(-992.8 -142.1)"></path></svg>
+              </figure></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+        <div class="mt-4 mt-lg-2 mb-1 mb-lg-2 contact-us-subheader text-center text-lg-left">
+          <strong>Mandanos un mensaje. Contestamos rápido.</strong>
+        </div>
+
+        <%= form_for @contact, url: contact_us_path, html: { novalidate: '' } do |f| %>
+
+          <% if SpreeContactUs.require_name %>
+            <%= f.text_field :name, class: 'required col-12 mt-3 mb-1 mb-lg-2', placeholder: 'Nombre' %>
+          <% end %>
+
+          <%= f.email_field :email, class: 'required col-12 mt-3 mb-1 mb-lg-2', placeholder: true %>
+
+          <% if SpreeContactUs.require_subject %>
+            <%= f.text_field :subject, class: 'required col-12 mt-3 mb-1 mb-lg-2' %>
+          <% end %>
+            <%= f.text_area :message, class: 'required col-12 mt-3 mb-3', rows: 4, placeholder: 'Mensaje' %>
+          <div class="text-center text-lg-left mt-lg-1 mb-4">
+            <%= f.submit 'Enviar', alt: 'Enviar', id: 'contact_us_contact_submit', title: 'Enviar',
+                class: 'col-7 col-lg-4 mb-4 mb-lg-0 btn btn-primary text-uppercase font-weight-bold'
+            %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

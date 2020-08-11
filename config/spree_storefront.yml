@@ -64,7 +64,7 @@ default:
     - title: Quienes somos
       url: /quienes-somos
     - title: Contacto
-      url: /contacto
+      url: /contact-us
 
 #  navigation:
 #    - title: Piletas
