@@ -5,6 +5,8 @@ ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
+# para setear environment variables. https://github.com/bkeepers/dotenv
+gem 'dotenv-rails', require: 'dotenv/rails-now' # este require es para que pudan usarse las variables en los gems de abajo
 # para Postgresql
 gem 'pg'
 # Use Puma as the app server
@@ -40,9 +42,6 @@ gem 'spree_analytics_trackers', '~> 1.1'
 gem 'spree_social', github: 'spree-contrib/spree_social'
 gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
 #gem 'spree_contact_us', github: 'matiasrenta/spree_contact_us'
-
-# para setear environment variables. https://github.com/bkeepers/dotenv
-gem 'dotenv-rails'
 
 # Blog (CMS)
 #gem 'spree_blog', github: 'johndavid400/spree_blog'
