@@ -55,3 +55,16 @@
 .w-60 {
   width: 60% !important;
 }
+
+/* para modificar las etiquetas de los banners del home, en especial la de "Construcción de piletas" */
+.homepage-taxon-box h3 {
+  margin: 0;
+  width: auto;
+  background: #ffffff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.35px;
+  padding: 0 3%;
+}
