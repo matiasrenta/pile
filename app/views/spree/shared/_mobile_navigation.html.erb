@@ -39,9 +39,10 @@
         <li class="d-flex justify-content-between align-items-center mobile-navigation-list-item">
           <%= link_to root[:title], root[:url], class: 'w-60' %>
 
-          <% if ['piletas', 'productos'].include?(root[:title].downcase) %>
+          <%# if ['piletas', 'productos'].include?(root[:title].downcase) %>
+          <% if root[:items].present? %>
               <a class="w-40 text-right mobile-navigation-category-link go-to-category-text" data-category="<%= root[:title].parameterize %>" href="#" aria-label="">
-                <%= root[:title].downcase == 'piletas' ? Spree.t('see_models') : Spree.t('see_categories') %>
+                <%#= root[:title].downcase == 'piletas' ? Spree.t('see_models') : Spree.t('see_categories') %>
                 <%= icon(name: 'arrow-right',
                         classes: 'd-sm-none spree-icon-arrow spree-icon-arrow-right',
                         width: 16,
@@ -52,6 +53,7 @@
                         height: 27) %>
               </a>
           <% end %>
+          <%# end %>
 
           <ul class="list-unstyled position-absolute mobile-navigation-sublist" data-category="<%= root[:title].parameterize %>">
             <% if root[:items].present? %>

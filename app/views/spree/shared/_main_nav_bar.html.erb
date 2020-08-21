@@ -3,30 +3,7 @@
     <% spree_navigation_data.each do |root| %>
       <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
         <%= link_to root[:title], root[:url], class: "p-2 main-nav-bar-item main-nav-bar-category-button" %>
-        <% if root[:title] == 'Productos' %>
-            <div class="w-100 shadow main-nav-bar-category-dropdown">
-              <div class="container p-0 d-flex justify-content-xl-around mx-auto">
-                <% root[:items].each_slice(5) do |items_slice| %>
-                    <div class="row">
-                      <div class="category-links">
-                        <%# if root[:subtitle].present? %>
-                           <!-- <div class="category-links-header text-uppercase">
-                              <%#= root[:subtitle] %>
-                            </div> -->
-                        <%# end %>
-                        <ul class="pl-0">
-                          <% items_slice.each do |item| %>
-                              <li>
-                                <%= link_to item[:title], item[:url], class: "text-uppercase main-nav-bar-category-links" %>
-                              </li>
-                          <% end %>
-                        </ul>
-                      </div>
-                    </div>
-                <% end %>
-              </div>
-            </div>
-        <% else %>
+
             <% if root[:items].present? || root[:promo_banners].present? %>
                 <div class="w-100 shadow main-nav-bar-category-dropdown">
                   <div class="container p-0 d-flex justify-content-xl-around mx-auto">
@@ -68,7 +45,7 @@
                   </div>
                 </div>
             <%end %>
-        <% end %>
+
       </li>
     <% end %>
   </ul>
