@@ -37,7 +37,7 @@
       <% if @taxon && @taxon.name == 'Construcción de piletas' %>
           <%= render 'spree/products/filters_desktop_piletas', permitted_params: permitted_params %>
       <% else %>
-          <%= render 'spree/products/filters_desktop_piletas', permitted_params: permitted_params %>
+          <%= render 'spree/products/filters_desktop', permitted_params: permitted_params %>
       <% end %>
 
       <%= render 'spree/shared/products', products: @products %>
