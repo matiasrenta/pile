@@ -30,11 +30,16 @@
     <% end %>
 
     <%= render 'spree/products/filter_and_sort_mobile_buttons' %>
-    <%#= (Mati custom) render 'spree/products/sort_desktop', permitted_params: permitted_params if @taxon.name != 'Estilos de pileta' %>
+    <%#= (Mati custom) render 'spree/products/sort_desktop', permitted_params: permitted_params if @taxon.name != 'Construcción de piletas' %>
     <%= render 'spree/products/sort_desktop', permitted_params: permitted_params %>
     <div class="container mb-3 d-md-flex">
-      <%#= (Mati custom) render 'spree/products/filters_desktop', permitted_params: permitted_params if @taxon.name != 'Estilos de pileta' %>
-      <%= render 'spree/products/filters_desktop', permitted_params: permitted_params %>
+      <%#= (Mati custom) render 'spree/products/filters_desktop', permitted_params: permitted_params if @taxon.name != 'Construcción de piletas' %>
+      <% if @taxon && @taxon.name == 'Construcción de piletas' %>
+          <%= render 'spree/products/filters_desktop_piletas', permitted_params: permitted_params %>
+      <% else %>
+          <%= render 'spree/products/filters_desktop_piletas', permitted_params: permitted_params %>
+      <% end %>
+
       <%= render 'spree/shared/products', products: @products %>
     </div>
   <% end %>

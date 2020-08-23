@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
 #  get 'contacto', to: 'spree/static_content#show', as: 'contacto'
   get 'quienes-somos', to: 'spree/static_content#show', as: 'quienes-somos'
+  get 'productos-para-construir-tu-pileta', to: 'spree/static_content#show', as: 'productos-para-construir-tu-pileta'
 
 
 end

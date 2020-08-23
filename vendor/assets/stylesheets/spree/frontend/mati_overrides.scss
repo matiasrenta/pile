@@ -68,3 +68,10 @@
   letter-spacing: 0.35px;
   padding: 1% 3%;
 }
+
+@media (min-width: 768px) {
+  /* line 228, ../../../.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/spree_frontend-4.1.7/app/assets/stylesheets/spree/frontend/views/spree/home/index.scss */
+  .homepage-bottom-box-inner {
+    padding: 15px 100px;
+  }
+}
