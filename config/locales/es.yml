@@ -13,3 +13,8 @@ es:
       notices:
         success: 'Tu mensaje se envió correctamente, No te preocupes, te vamos a responder rápido.'
 
+  activerecord:
+    attributes:
+      spree/product:
+        less_than: Menos de
+
