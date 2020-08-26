@@ -84,46 +84,4 @@
 
 <div data-product-carousel data-product-carousel-taxon-id='ultimos-trabajos' class="mb-3"></div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <%= link_to spree.nested_taxons_path('streetstyle') do %>
-        <div class="homepage-bottom-box text-center mb-3">
-          <img class="w-100 lazyload"
-            data-src="<%= asset_path('homepage/promo_banner_left.jpg') %>"
-            data-srcset="<%= image_source_set('homepage/promo_banner_left') %>"
-            alt="<%= Spree.t('homepage.new_collection')%>" />
 
-          <div class="homepage-bottom-box-inner" role="img" aria-label="<%= Spree.t('homepage.new_collection') %>">
-            <div class="homepage-bottom-box-inner-small-text">
-              <%= Spree.t('homepage.new_collection') %>
-            </div>
-            <div class="homepage-bottom-box-inner-big-text">
-              <%= Spree.t('homepage.streetstyle') %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-
-    <div class="col-12 col-lg-6">
-      <%= link_to spree.nested_taxons_path('summer-sale') do %>
-        <div class="homepage-bottom-box text-center mb-3">
-          <img class="w-100 lazyload"
-            data-src="<%= asset_path('homepage/promo_banner_right.jpg') %>"
-            data-srcset="<%= image_source_set('homepage/promo_banner_right') %>"
-            alt="<%= Spree.t('homepage.summer_sale')%>" />
-
-          <div class="homepage-bottom-box-inner">
-            <div class="homepage-bottom-box-inner-small-text">
-              <%= Spree.t('homepage.summer_sale') %>
-            </div>
-            <div class="homepage-bottom-box-inner-big-text">
-              <%= Spree.t('homepage.up_to_60') %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div>
