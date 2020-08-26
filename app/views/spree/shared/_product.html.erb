@@ -7,8 +7,8 @@
         <%= product.name %>
       </div>
       <div class="product-component-price">
-        <%#= (Mati custom) display_price(product) if product.price_in(current_currency).try(:amount) > 0 %>
-        <%= display_price(product) %>
+        <%= display_price(product) if product.price_in(current_currency).try(:amount) > 0 %>
+        <%#= display_price(product) %>
       </div>
     </div>
   <% end %>
