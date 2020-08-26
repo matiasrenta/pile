@@ -44,32 +44,55 @@
           </div>
         </div>
       </div>
+
+
       <div class="row d-none d-xl-flex border-top py-5 text-uppercase footer-spree-menu-links">
-        <% if spree_navigation_data.any? %>
-          <% spree_navigation_data.first(3).each do |root| %>
-            <div class="col-3">
-              <div class="footer-spree-label">
-                <%= link_to root[:title], root[:url] %>
-              </div>
-              <% if  root[:items].present? %>
-                <% root[:items].each do |item| %>
-                  <div class="pt-2"><%= link_to item[:title], item[:url] %></div>
-                <% end %>
-              <% end %>
-            </div>
-          <% end %>
-        <% end %>
-        <% if spree.respond_to?(:account_path) %>
-          <div class="col-3">
-            <div class="footer-spree-label">
-              <%= Spree.t('nav_bar.my_account') %>
-            </div>
-            <div class="pt-2">
-              <%= link_to Spree.t('nav_bar.my_orders'), spree.account_path(anchor: "account-my-orders") %>
-            </div>
+
+        <div class="col-3">
+          <div class="footer-spree-label">
+            <%= link_to 'Inicio', root_path %>
           </div>
-        <% end %>
+          <div class="pt-2">
+            <%= link_to 'Construcción de piletas', spree.nested_taxons_path('construccion-de-piletas') %>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="footer-spree-label">
+            <%= link_to 'Productos', '/productos-para-construir-tu-pileta' %>
+          </div>
+          <div class="pt-2">
+            <%= link_to 'Losetas', spree.nested_taxons_path('productos/losetas-atermicas') %>
+          </div>
+          <div class="pt-2">
+            <%= link_to 'Revestimientos', spree.nested_taxons_path('productos/revestimientos-para-piletas') %>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="footer-spree-label">
+            <%= link_to 'Tendencias', spree.nested_taxons_path('tendencias') %>
+          </div>
+          <div class="pt-2">
+            <%= link_to 'Ultimos trabajos', spree.nested_taxons_path('ultimos-trabajos') %>
+          </div>
+          <div class="pt-2">
+            <%= link_to 'Climatización de piletas', spree.nested_taxons_path('climatización-de-piletas') %>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="footer-spree-label">
+            <%= link_to 'Quienes somos', '/quienes-somos' %>
+          </div>
+          <div class="pt-2">
+            <%= link_to 'Contacto', '/contacto' %>
+          </div>
+        </div>
+
       </div>
+
+
     </div>
     <%= render 'spree/shared/copyright' %>
   </footer>
