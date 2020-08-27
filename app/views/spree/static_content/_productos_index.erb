@@ -10,13 +10,14 @@
 
   <div class="container">
     <div class="row">
+
       <div class="col-12 col-lg-6">
         <%= link_to spree.nested_taxons_path('productos/losetas-atermicas') do %>
             <div class="homepage-bottom-box text-center mb-3">
               <img class="w-100 lazyload"
                    data-src="<%= asset_path('product_page/losetas.jpg') %>"
                    data-srcset="<%= image_source_set('product_page/losetas') %>"
-                   alt="<%= Spree.t('homepage.losetas_atermicas')%>" />
+                   alt="Losetas para piletas" />
 
               <div class="homepage-taxon-box-text homepage-bottom-box-inner">
                 <h3><%= Spree.t('homepage.losetas_atermicas') %></h3>
@@ -25,14 +26,13 @@
             </div>
         <% end %>
       </div>
-
       <div class="col-12 col-lg-6">
         <%= link_to spree.nested_taxons_path('productos/revestimientos-para-piletas') do %>
             <div class="homepage-bottom-box text-center mb-3">
               <img class="w-100 lazyload"
                    data-src="<%= asset_path('product_page/revestimientos.jpg') %>"
                    data-srcset="<%= image_source_set('product_page/revestimientos') %>"
-                   alt="<%= Spree.t('homepage.summer_sale')%>" />
+                   alt="Revestimientos para piletas" />
 
               <div class="homepage-taxon-box-text homepage-bottom-box-inner" role="img" aria-label="">
                 <h3><%= Spree.t('homepage.revestiminetos') %></h3>
@@ -40,6 +40,7 @@
             </div>
         <% end %>
       </div>
+
     </div>
   </div>
 
