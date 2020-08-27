@@ -3,7 +3,8 @@ es:
     see_models: 'Ver modelos'
     see_categories: 'Ver categorías'
     homepage:
-      summer_collection: "Tu pileta increíble, momentos divertidos, recuerdos para siempre."
+      #summer_collection: "Tu pileta increíble, momentos divertidos, recuerdos para siempre."
+      summer_collection: "Construcción de piletas en Córdoba y cercanías."
       all_rights_reserved: "Todos los derechos reservados"
       losetas_atermicas: 'Losetas'
       revestimientos: 'Revestimientos'
