@@ -14,18 +14,19 @@
             <%= @product.name %>
           </h1>
           <div id="cart-form" data-hook="cart_form">
-            <%= render 'cart_form', variant_change_identifier: 'productCarousel' %>
+            <%#= render 'cart_form', variant_change_identifier: 'productCarousel' %>
+            <%= render 'cart_form_piletas', variant_change_identifier: 'productCarousel' %>
           </div>
         </div>
       </div>
     </div>
     <div class="pb-4 pt-md-5 row" data-hook="product_description">
       <div class="col-12 col-md-7 col-lg-6">
-        <%= render partial: 'description' %>
+        <%#= render partial: 'description' %>
       </div>
       <div class="d-none d-lg-block col-lg-1"></div>
       <div class="col-12 col-md-5" data-hook="product_properties">
-        <%= render partial: 'properties' %>
+        <%#= render partial: 'properties' %>
       </div>
       <div class="col-12" data-hook="promotions">
         <%= render partial: 'promotions' %>

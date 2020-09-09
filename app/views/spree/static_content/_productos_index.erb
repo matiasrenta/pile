@@ -1,0 +1,60 @@
+<div class="taxon">
+  <div class="container">
+
+    <nav id="breadcrumbs" class="col-12 mt-1 mt-sm-3 mt-lg-4" aria-label="breadcrumb"><ol class="breadcrumb" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><li itemscope="itemscope" itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="breadcrumb-item"><a itemprop="url" href="/"><span itemprop="name">Inicio</span><meta itemprop="position" content="0"></a><span itemprop="item" itemscope="itemscope" itemtype="https://schema.org/Thing" itemid="/"></span></li><li itemscope="itemscope" itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="breadcrumb-item"><a itemprop="url" href="/productos-para-construir-tu-pileta"><span itemprop="name">Productos</span><meta itemprop="position" content="1"></a><span itemprop="item" itemscope="itemscope" itemtype="https://schema.org/Thing" itemid="/productos-para-construir-tu-pileta"></span></li></ol></nav>
+    <div class="py-md-3 text-uppercase taxon-title">
+      Productos para construir tu pileta
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-lg-6">
+        <%= link_to spree.nested_taxons_path('productos/losetas-atermicas') do %>
+            <div class="homepage-bottom-box text-center mb-3">
+              <img class="w-100 lazyload"
+                   data-src="<%= asset_path('product_page/losetas.jpg') %>"
+                   data-srcset="<%= image_source_set('product_page/losetas') %>"
+                   alt="Losetas para piletas" />
+
+              <div class="homepage-taxon-box-text homepage-bottom-box-inner">
+                <h3><%= Spree.t('homepage.losetas_atermicas') %></h3>
+              </div>
+
+            </div>
+        <% end %>
+      </div>
+      <div class="col-12 col-lg-6">
+        <%= link_to spree.nested_taxons_path('productos/revestimientos-para-piletas') do %>
+            <div class="homepage-bottom-box text-center mb-3">
+              <img class="w-100 lazyload"
+                   data-src="<%= asset_path('product_page/revestimientos.jpg') %>"
+                   data-srcset="<%= image_source_set('product_page/revestimientos') %>"
+                   alt="Revestimientos para piletas" />
+
+              <div class="homepage-taxon-box-text homepage-bottom-box-inner" role="img" aria-label="">
+                <h3><%= Spree.t('homepage.revestiminetos') %></h3>
+              </div>
+            </div>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Team-->
+  <section id="team">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

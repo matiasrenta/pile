@@ -1,10 +1,21 @@
 es:
   spree:
+    see_models: 'Ver modelos'
+    see_categories: 'Ver categorías'
     homepage:
-      summer_collection: "Piletas increíbles. Momentos divertidos. Recuerdos para siempre"
+      #summer_collection: "Tu pileta increíble, momentos divertidos, recuerdos para siempre."
+      summer_collection: "Construcción de piletas en Córdoba y cercanías."
       all_rights_reserved: "Todos los derechos reservados"
-      decks_solares: 'Decks y solares'
-      todo_para_piletas: 'Todo para piletas'
-      construccion_piletas: 'Construcción de piletas'
-      construi_tu_pileta: 'Construí tu pileta'
+      losetas_atermicas: 'Losetas'
+      revestimientos: 'Revestimientos'
+      construccion_piletas: 'Piletas'
+      construi_tu_pileta: 'Construir mi pileta'
+    spree_contact_us:
+      notices:
+        success: 'Tu mensaje se envió correctamente, No te preocupes, te vamos a responder rápido.'
+
+  activerecord:
+    attributes:
+      spree/product:
+        less_than: Menos de
 
