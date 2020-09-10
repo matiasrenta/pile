@@ -1,0 +1,20 @@
+<% cache base_cache_key + [available_option_types_cache_key, filtering_params_cache_key, @taxon&.id] do %>
+
+    <div id="plp-filters-accordion" class="d-none d-lg-block col-lg-3 pr-5 position-sticky h-100 plp-filters" data-hook="taxon_sidebar_navigation">
+
+        <% if @taxon && @taxon.permalink == 'construccion-de-piletas' %>
+            <h3>Importante</h3>
+            <div>
+              Estos son algunos ejemplos de piletas que podés construir con <strong>LaPile.</strong> Luego comunicate para contarnos tus necesidades específicas y poder hacerte un proyecto personalizado.
+            </div>
+        <% elsif @taxon && @taxon.permalink == 'losetas-atermicas' %>
+            <div>
+            </div>
+        <% elsif @taxon && @taxon.permalink == 'revestimientos-para-piletas' %>
+            <div>
+            </div>
+        <% end %>
+
+    </div>
+
+<% end %>
