@@ -1,11 +1,15 @@
 default:
   navigation:
+    - title: Inicio
+      url: /
     - title: Piletas
       url: /t/construccion-de-piletas
     - title: Productos
       url: /productos-para-construir-tu-pileta
     - title: Quienes somos
       url: /quienes-somos
+    - title: Preguntas frec.
+      url: /preguntas-frecuentes
     - title: Contacto
       url: /contact-us
 
