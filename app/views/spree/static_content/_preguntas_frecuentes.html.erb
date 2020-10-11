@@ -24,7 +24,7 @@
 
             <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
               <div class="card-body">
-                Entre 8 y 20 días dependiendo del tamaño de la pileta y de factores como el acceso de maquinaria al terreno.
+                Entre 3 y 5 semanas, dependiendo del tamaño de la pileta y de factores como el acceso de maquinaria al terreno.
               </div>
             </div>
           </div>
@@ -40,12 +40,12 @@
             </div>
             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
               <div class="card-body">
-                Entre $xxxx y $xxxx según tamaño, accesorios y espacios construidos. Mirá los precios que publicamos en Construcción de piletas (link a los renders) para que te des una buena idea.
+                Desde $285 mil pesos, y varía según tamaño, accesorios y espacios construidos. Mirá los precios publicados en <%= link_to 'Construcción de piletas', spree.nested_taxons_path('construccion-de-piletas') %> para que te des una buena idea.
               </div>
             </div>
           </div>
 
-
+<!--
           <div class="card">
             <div class="card-header" id="heading3">
               <h5 class="mb-0">
@@ -60,42 +60,7 @@
               </div>
             </div>
           </div>
-
-
-
-
-          <div class="card">
-            <div class="card-header" id="heading4">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                  ¿En qué consiste la garantía?
-                </button>
-              </h5>
-            </div>
-            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-              <div class="card-body">
-                El casco de hormigón y la mampostería (la pileta en sí) tiene10 años de garantía otorgada por LaPile y firmada por ingeniero civil. Los equipamientos de filtrado y bomba tienen x año de garantía otorgada por el fabricante. Los componentes eléctricos y electrónicos tienen X meses de garantía otorgada por el fabricante. Por lo general Vulcano es el fabricante. <br/>
-                La Garantía se entrega en dos formatos, papel firmado y sellado, y electrónicamente por email o whatsapp.
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-header" id="heading5">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                  ¿Cuál es el método constructivo utilizado y qué ventajas tiene sobre otros?
-                </button>
-              </h5>
-            </div>
-            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-              <div class="card-body">
-                El método constructivo es el tradicional. con losa de hormigón armado, mampostería de ladrillos y columnas de encadenado. Las ventajas son… (ayuda con el chamuyo)
-              </div>
-            </div>
-          </div>
-
+-->
 
           <div class="card">
             <div class="card-header" id="heading6">
@@ -114,6 +79,55 @@
 
 
           <div class="card">
+            <div class="card-header" id="heading4">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  ¿En qué consiste la garantía?
+                </button>
+              </h5>
+            </div>
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+              <div class="card-body">
+                El casco de hormigón y la mampostería (la pileta en sí) tiene 10 años de garantía otorgada por <strong>LaPile</strong> y firmada por ingeniero civil. Los equipamientos de filtrado, bomba y componentes eléctricos/electrónicos tienen la garantía otorgada por el fabricante (Marca Vulcano). <br/>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="heading11">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                  ¿Proveen o gestionan la compra de todos los materiales, equipamiento y accesorios para la construcción de la pileta?
+                </button>
+              </h5>
+            </div>
+            <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+              <div class="card-body">
+                Sí, nos encargamos de la logística para que todos los elementos estén disponibles en la contrucción de tu pileta.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="heading5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  ¿Cuál es el método constructivo utilizado?
+                </button>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+              <div class="card-body">
+                El método constructivo es el tradicional, con losa de hormigón armado, mampostería de ladrillos de 30 cm., columnas y encadenados de hierro Acindar de 8 de diámetro.
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card">
             <div class="card-header" id="heading7">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
@@ -123,7 +137,7 @@
             </div>
             <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
               <div class="card-body">
-                Para que la pileta se pueda usar debe tener el equipamiento necesario instalado, dependiendo de la pileta que construyas, el equipamiento que se instalará. En todos los casos incluirá los componentes hidráulico y eléctricos, losetas atérmicas perimetrales u otro material si así lo requiere el cliente, pintura acrílica para piletas o revestimiento a elección del cliente. Pero variará si el proyecto incluye solar seco, jacuzzi y otros servicios. Te recomendamos que mires el listado de piletas con sus descripciones y detalles en la sección de construcción de piletas para darte una buena idea de lo que incluye cada pileta.
+                Para que la pileta se pueda usar debe tener el equipamiento necesario instalado, dependiendo de la pileta que construyas, el equipamiento que se instalará. En todos los casos incluirá los componentes hidráulico y eléctricos, losetas atérmicas perimetrales u otro material si así lo requiere el cliente, pintura acrílica a base de agua o revestimiento a elección del cliente. Pero variará si el proyecto incluye solar seco, jacuzzi y otros servicios. Te recomendamos que mires el listado de piletas con sus descripciones y detalles en la sección de <%= link_to 'Construcción de piletas', spree.nested_taxons_path('construccion-de-piletas') %> para darte una buena idea de lo que incluye cada pileta.
               </div>
             </div>
           </div>
@@ -139,7 +153,7 @@
             </div>
             <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
               <div class="card-body">
-                Existen los imprescindibles y los recomendables, como imprescindible son xxxxxx y como recomendable serían las luces y xxxxx
+                La toma de fondo, el skimmer y los retornos son imprescindibles. Además las luces led y la virola para filtrado son altamente recomendables.
               </div>
             </div>
           </div>
@@ -155,7 +169,7 @@
             </div>
             <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
               <div class="card-body">
-                hidromasajes, climatización, cerramiento, colocación de deck, solar seco, cascadas, xxxxxx
+                Hidromasajes, climatización, automatización de piletas, decks, solar seco, cerramiento de piletas, cascadas, barandas... todo lo que necesités para tu pileta.
               </div>
             </div>
           </div>
@@ -171,23 +185,7 @@
             </div>
             <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
               <div class="card-body">
-                Si durante la excavación se encuentran cañerías o tendidos de cables o cualquier otra instalación que requiera modificaciones en dichas instalaciones. LaPile podrá solucionar estas situaciones inesperadas pero tendrán un costo adicional según su complejidad.
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-header" id="heading11">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                  ¿Proveen o gestionan la compra de todos los materiales para la construcción de la pileta?
-                </button>
-              </h5>
-            </div>
-            <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
-              <div class="card-body">
-                Sí, nos encargamos de toda la logística para que los materiales estén disponibles al momento de usarlos.
+                Instalaciones que sorpresivamente aparezcan en el lugar de la excavación, sean cañerías o cables, y que requieran una nueva instalación. <strong>LaPile</strong> podrá solucionar estas situaciones inesperadas, pero tendrán un costo adicional según su complejidad.
               </div>
             </div>
           </div>
@@ -199,3 +197,6 @@
     </div>
   </section>
 </div>
+
+
+
